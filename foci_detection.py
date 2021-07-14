@@ -173,14 +173,3 @@ def get_median_radius(path,imagesize):
     a,b,r = inner_border
     radius.append(r)
   return radius_selector(radius)
-  
-def main(img,imagesize,margin,med_r,min_pixels):
-  # border detection
-  inner_border = border_detection(img, imagesize, 0)
-  # image cropping
-  img_croped = crop_inner_circle(img, imagesize, inner_border,med_r-margin)
-  # foci detection
-  binary_img = binary_Threshold(img_croped,inner_border)
-  box = foci_detection(binary_img, inner_border, min_pixels)
-  # foci count
-  return foci_count(box)
