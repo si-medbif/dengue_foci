@@ -91,7 +91,7 @@ try:
       foci_info.to_csv(os.path.join(info_file,img_csv))
 
       #image result
-      result_binary_box = foci_draw_detected(binary_img,imagesize,box)
+      result_binary_box = foci_filter(binary_img,imagesize,box)
       result_raw_box = foci_draw_detected(img_crop,imagesize,box)
       result_raw_number = write_numberOfFoci(img_crop,imagesize,box)
 
