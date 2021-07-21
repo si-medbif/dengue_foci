@@ -1,5 +1,5 @@
 # Image segmentation for dengue virus foci detection from focus forming assay
-<img src="https://github.com/jaketmp/pyCompare/raw/master/docs/_static/bland_altman.png" style="max-width: 60%;" align="center" />
+<img src="https://github.com/jaketmp/pyCompare/raw/master/workflow.png" style="max-width: 60%;" align="center" />
 
 ## About
 A project aims to count numbers and measure areas of dengue foci from focus forming assay (FFA)
