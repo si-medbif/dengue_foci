@@ -1,6 +1,6 @@
 ## mac version
 # import module
-from foci_detection_3 import *
+from foci_detection import *
 from configparser import ConfigParser
 import logging
 from datetime import datetime
