@@ -9,7 +9,7 @@ Project information: [ https://github.com/si-medbif/dengue_foci/PDF/Project info
 Instructions for installation and usage can be followed by this link: [https://github.com/si-medbif/dengue_foci/PDF/Program guidebook demo version.pdf](https://github.com/si-medbif/dengue_foci/blob/8a031d0b03dee3857547c57965aeb27fe2aea0df/PDF/Program%20guidebook%20demo%20version.pdf)
     
 ## Prerequisite
-1. You need install Python >=3.9.6
+1. You need install `Python >= 3.9.6`
 2. Library requirement
 
     Installation with pip allows the usage of the install command:
@@ -27,5 +27,8 @@ Instructions for installation and usage can be followed by this link: [https://g
 
 
 ## Installation
-...
+1. clone this project followed by Github CLI command: 
+
+        gh repo clone si-medbif/dengue_foci
+   or download project `zip` file
     
