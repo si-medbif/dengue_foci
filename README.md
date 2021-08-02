@@ -95,10 +95,7 @@ Instructions for installation and usage can be followed by this link: [https://g
         └── ...
 ## Reference
 
-OpenCV. https://opencv.org. Published 2021. Accessed August 2, 2021.
-
-Hough Circle Transform. Docs.opencv.org. https://docs.opencv.org/4.5.2/da/d53/tutorial_py_houghcircles.html. Published 2021. Accessed July 20, 2021.
-
-Image Thresholding. Docs.opencv.org. https://docs.opencv.org/4.5.2/d7/d4d/tutorial_py_thresholding.html. Published 2021. Accessed July 20, 2021.
-
-cv2.connectedComponentsWithStats(). Structural Analysis and Shape Descriptors. Docs.opencv.org. https://docs.opencv.org/3.4/d3/dc0/group__imgproc__shape.html. Published 2021. Accessed July 20, 2021.
+1. OpenCV. https://opencv.org. Published 2021. Accessed August 2, 2021.
+2. Hough Circle Transform. Docs.opencv.org. https://docs.opencv.org/4.5.2/da/d53/tutorial_py_houghcircles.html. Published 2021. Accessed July 20, 2021.
+3. Image Thresholding. Docs.opencv.org. https://docs.opencv.org/4.5.2/d7/d4d/tutorial_py_thresholding.html. Published 2021. Accessed July 20, 2021.
+4. cv2.connectedComponentsWithStats(). Structural Analysis and Shape Descriptors. Docs.opencv.org. https://docs.opencv.org/3.4/d3/dc0/group__imgproc__shape.html. Published 2021. Accessed July 20, 2021.
