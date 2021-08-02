@@ -54,8 +54,8 @@ Instructions for installation and usage can be followed by this link: [https://g
 2. set parameter in `config.ini`
 
         [Paths]
-        input_image_folder = location path of input folder that you create in step 1
-        output_image_folder = location path of output folder that you create in step 1
+        input_image_folder = #location path of input folder that you create in step 1
+        output_image_folder = #location path of output folder that you create in step 1
 
         [Parameters]
         ; default parameter: margin = 0 pixel
