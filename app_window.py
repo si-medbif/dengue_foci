@@ -8,8 +8,8 @@ from datetime import datetime
 # =================== Load the configuration file ===================
 
 parser = ConfigParser()
-ini_path = os.path.dirname(os.path.abspath(__file__))
-parser.read(ini_path+'/config.ini')
+ini_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),'config.ini')
+parser.read(ini_path)
 
 # configuration infomation
 input_path = parser.get('Paths','input_image_folder')
