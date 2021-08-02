@@ -2,6 +2,7 @@
 from foci_detection import *
 from configparser import ConfigParser
 import logging
+import sys
 from datetime import datetime
 
 # =================== Load the configuration file ===================
