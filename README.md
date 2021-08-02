@@ -14,8 +14,8 @@ Instructions for installation and usage can be followed by this link:
     Installation with pip allows the usage of the install command:
 
         pip install -r requirements.txt
-
     Library
+
         numpy == 1.21.0
         pandas == 1.3.0
         statistics == 1.0.3.5
