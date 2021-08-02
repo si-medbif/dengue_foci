@@ -108,7 +108,7 @@ for plate in os.listdir(input_path):
       number_foci.append([id,foci_count(box)])
       foci_info = num_pixels(box)
       img_csv = image[:-4]+".csv"
-      foci_info.to_csv(os.path.join(info_file,img_csv))
+      foci_info.to_csv(os.path.join(info_file,img_csv), index=False)
 
       #image result
       result_binary_mask = foci_filter(binary_img,imagesize,box)
@@ -131,7 +131,7 @@ for plate in os.listdir(input_path):
       
 
   foci_count_result = pd.DataFrame(number_foci, columns=["id", "foci count"])
-  foci_count_result.to_csv(os.path.join(plate_path_result,'foci_count_result.csv'))
+  foci_count_result.to_csv(os.path.join(plate_path_result,'foci_count_result.csv'), index=False)
   print('find detection completed!')
 
 
