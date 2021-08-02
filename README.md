@@ -74,22 +74,20 @@ Instructions for installation and usage can be followed by this link: [https://g
         │   │   ├── A1.jpg
         │   │   ├── A2.jpg
         │   │   └── ...
-        │   │
         │   ├── foci_description          # foci_description folder
         │   │   ├── A1.csv
         │   │   ├── A2.csv
         │   │   └── ...
-        │   │
         │   ├── raw_box                   # raw_box folder
         │   │   ├── A1.jpg
         │   │   ├── A2.jpg
         │   │   └── ...
-        │   │
         │   ├── raw_number                # raw_number folder
         │   │   ├── A1.jpg
         │   │   ├── A2.jpg
         │   │   └── ...
-        │   └── foci_count_result.csv
+        │   ├── foci_count_result.csv
+        │   └── logfile.log               # logging status
         │
         └── Plate_2_year-month-day_hours_minutes_seconds
         │   │
