@@ -64,7 +64,7 @@ Instructions for installation and usage can be followed by this link: [https://g
         min_foci_size = 9
 
 4. run the `app_window.py` file
-5. after the program running is finished
+5. after the program running has finished
 
         Outout                            # output folder result
         │
