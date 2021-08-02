@@ -32,26 +32,28 @@ Instructions for installation and usage can be followed by this link: [https://g
         pip install -r requirements.txt
    
 ## Step for work
-1. create `input folder` and `output folder`
+1. Create `input folder`, `output folder`. and input your image data. 
+
+    File structure diagram
     
-        Input                       # input folder
-        │
-        ├── Plate_1                 # Plate 1 folder
-        │   ├── A1.jpg              # FFA image that would like to detect foci
-        │   ├── A2.jpg
-        │   ├── A3.jpg 
-        │   └── ...
-        ├── Plate_2                 # Plate 2 folder
-        │   ├── A1.jpg              # FFA image that would like to detect foci
-        │   ├── A2.jpg
-        │   ├── A3.jpg 
-        │   └── ...
-        └── ...
-        
-        Outout                      # output folder
-        │
-        └── ...
-2. set parameter in `config.ini`
+            Input                       # input folder
+            │
+            ├── Plate_1                 # Plate 1 folder
+            │   ├── A1.jpg              # FFA image that would like to detect foci
+            │   ├── A2.jpg
+            │   ├── A3.jpg 
+            │   └── ...
+            ├── Plate_2                 # Plate 2 folder
+            │   ├── A1.jpg              # FFA image that would like to detect foci
+            │   ├── A2.jpg
+            │   ├── A3.jpg 
+            │   └── ...
+            └── ...
+
+            Outout                      # output folder
+            │
+            └── ...
+2. Set parameter in `config.ini`
 
         [Paths]
         input_image_folder = #location path of input folder that you create in step 1
@@ -63,37 +65,38 @@ Instructions for installation and usage can be followed by this link: [https://g
         ; set min pixel area for foci detction: 9 pixels is default parameter
         min_foci_size = 9
 
-4. run the `app_window.py` file
-5. after the program running has finished.
-   the result is in output folder that you created:
+4. Run the `app_window.py` file
+5. After the program running has finished.
 
-        Output                            # output folder result
-        │
-        ├── Plate_1_year-month-day_hours_minutes_seconds
-        │   │
-        │   ├── binary_image              # binary_image folder
-        │   │   ├── A1.jpg
-        │   │   ├── A2.jpg
-        │   │   └── ...
-        │   ├── foci_description          # foci_description folder
-        │   │   ├── A1.csv
-        │   │   ├── A2.csv
-        │   │   └── ...
-        │   ├── raw_box                   # raw_box folder
-        │   │   ├── A1.jpg
-        │   │   ├── A2.jpg
-        │   │   └── ...
-        │   ├── raw_number                # raw_number folder
-        │   │   ├── A1.jpg
-        │   │   ├── A2.jpg
-        │   │   └── ...
-        │   ├── foci_count_result.csv
-        │   └── logfile.log               # logging status
-        │
-        └── Plate_2_year-month-day_hours_minutes_seconds
-        │   │
-        │   └── ...
-        └── ...
+   The result is in output folder that you created:
+
+            Output                            # output folder result
+            │
+            ├── Plate_1_year-month-day_hours_minutes_seconds
+            │   │
+            │   ├── binary_image              # binary_image folder
+            │   │   ├── A1.jpg
+            │   │   ├── A2.jpg
+            │   │   └── ...
+            │   ├── foci_description          # foci_description folder
+            │   │   ├── A1.csv
+            │   │   ├── A2.csv
+            │   │   └── ...
+            │   ├── raw_box                   # raw_box folder
+            │   │   ├── A1.jpg
+            │   │   ├── A2.jpg
+            │   │   └── ...
+            │   ├── raw_number                # raw_number folder
+            │   │   ├── A1.jpg
+            │   │   ├── A2.jpg
+            │   │   └── ...
+            │   ├── foci_count_result.csv
+            │   └── logfile.log               # logging status
+            │
+            └── Plate_2_year-month-day_hours_minutes_seconds
+            │   │
+            │   └── ...
+            └── ...
 ## Reference
 
 1. OpenCV. https://opencv.org. Published 2021. Accessed August 2, 2021.
