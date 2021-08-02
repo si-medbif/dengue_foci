@@ -11,6 +11,7 @@ Instructions for installation and usage can be followed by this link:
 ## Prerequisite
 1. You need install Python >=3.9.6
 2. Library requirement
+
     Installation with pip allows the usage of the install command:
 
         pip install -r requirements.txt
