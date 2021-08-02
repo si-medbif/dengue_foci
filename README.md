@@ -1,4 +1,4 @@
-# Image segmentation for dengue virus foci detection from focus forming assay
+# Image segmentation for dengue virus foci detection in focus forming assay
 <img src="https://github.com/si-medbif/dengue_foci/blob/8e39c289992df571dc877bbf3a45a8527c5a889f/workflow.png" style="max-width: 60%;" align="center" />
 
 ## About
