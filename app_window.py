@@ -19,6 +19,25 @@ min_pixel = parser.getint('Parameters','min_foci_size')
 # =================== timestamp ===================
 dt_object = datetime.now()
 
+# =================== loging file ===================
+
+def my_custom_logger(logger_name, level=logging.INFO):
+    """
+    Method to return a custom logger with the given name and level
+    """
+    logger = logging.getLogger(logger_name)
+    logger.setLevel(level)
+    format_string = ('%(asctime)s, %(levelname)s, %(filename)s, %(message)s')
+    log_format = logging.Formatter(format_string)
+    # Creating and adding the console handler
+    console_handler = logging.StreamHandler(sys.stdout)
+    console_handler.setFormatter(log_format)
+    logger.addHandler(console_handler)
+    # Creating and adding the file handler
+    file_handler = logging.FileHandler(logger_name, mode='a')
+    file_handler.setFormatter(log_format)
+    logger.addHandler(file_handler)
+    return logger
 
 # =================== make directory ====================
 
@@ -44,8 +63,8 @@ for plate in os.listdir(input_path):
   #   print("error: can't make directory")
 
   # log information
-  file_log_name = os.path.join(output_path,'logfile.log')
-  logging.basicConfig(filename=file_log_name, level=logging.INFO, format='%(asctime)s, %(levelname)s, %(filename)s, %(message)s')
+  file_log_name = os.path.join(plate_path_result,'logfile.log')
+  logger = my_custom_logger(file_log_name)
 
   # =================== setting ===========================
 
@@ -105,10 +124,10 @@ for plate in os.listdir(input_path):
       cv2.imwrite(image, result_raw_number)
 
       # foci information log status
-      logging.info('{}, {}, foci detected: success'.format(plate,image))
+      logger.info('{}, {}, foci detected: success'.format(plate,image))
 
     except:
-      logging.error('{}, {}, foci detected: failed'.format(plate,image))
+      logger.error('{}, {}, foci detected: success'.format(plate,image))
       
 
   foci_count_result = pd.DataFrame(number_foci, columns=["id", "foci count"])
