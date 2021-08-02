@@ -32,7 +32,7 @@ Instructions for installation and usage can be followed by this link: [https://g
         pip install -r requirements.txt
    
 ## Step for work
-1. create input folder and output folder
+1. create `input folder` and `output folder`
     
         Input                       # input folder
         │
@@ -64,9 +64,10 @@ Instructions for installation and usage can be followed by this link: [https://g
         min_foci_size = 9
 
 4. run the `app_window.py` file
-5. after the program running has finished
+5. after the program running has finished.
+   the result is in output folder that you created:
 
-        Outout                            # output folder result
+        Output                            # output folder result
         │
         ├── Plate_1_year-month-day_hours_minutes_seconds
         │   │
