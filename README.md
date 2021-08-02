@@ -4,6 +4,9 @@
 ## About
 A project aims to count numbers and measure areas of dengue foci from focus forming assay (FFA)
 ## library installation
+User manual:
+    https://github.com/si-medbif/dengue_foci/blob/5db11a061de3b5b14d0abf86f3132cbcc9f0f48a/Program%20guidebook%20demo%20version.pdf
+    
 Installation with pip allows the usage of the install command:
 
     pip install -r requirements.txt
