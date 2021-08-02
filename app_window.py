@@ -1,4 +1,3 @@
-## mac version
 # import module
 from foci_detection import *
 from configparser import ConfigParser
