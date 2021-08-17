@@ -4,7 +4,7 @@
 ## About
 A project aims to count numbers and measure areas of dengue foci in focus forming assay (FFA) image by computer vision technology `(OpenCV)`. The specificity of the developed foci detection program is 93.75%. The R-value of the correlation between the foci measured by program and human-measured is 0.993. However, the number measured by the program significantly less than the average human-measured is 2.4 foci.
 
-Project information: [ https://github.com/si-medbif/dengue_foci/PDF/Project information.pdf](https://github.com/si-medbif/dengue_foci/blob/dffa6158f7201189d605cebe3bd88061e2beb717/PDF/Project%20information.pdf)
+Project information: [ https://github.com/si-medbif/dengue_foci/PDF/Project information.pdf](https://github.com/si-medbif/dengue_foci/blob/64d5c8804b936230369a74c105f9979e91305f79/PDF/project%20information.pdf)
 ## User manual
 Instructions for installation and usage can be followed by this link: [https://github.com/si-medbif/dengue_foci/PDF/Program guidebook demo version.pdf](https://github.com/si-medbif/dengue_foci/blob/8a031d0b03dee3857547c57965aeb27fe2aea0df/PDF/Program%20guidebook%20demo%20version.pdf)
     
