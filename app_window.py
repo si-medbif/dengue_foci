@@ -116,13 +116,20 @@ for plate in os.listdir(input_path):
       result_raw_box = foci_draw_detected(img_crop,imagesize,box)
       result_raw_number = write_numberOfFoci(img_crop,imagesize,box)
 
+      # Allow the script to process non-Jpeg files that can still be read by cv2 (e.g. *.CTL from ImageJ).     
+      if image.lower().endswith(('.png', '.jpg', '.jpeg')):
+        nimage = image
+      else:
+        root, _ = os.path.splitext(image)
+        nimage = root + ".jpg"
+
       #save file
       os.chdir(binary_box_path)
-      cv2.imwrite(image, result_binary_mask)
+      cv2.imwrite(nimage, result_binary_mask)
       os.chdir(raw_box_path)
-      cv2.imwrite(image, result_raw_box)
+      cv2.imwrite(nimage, result_raw_box)
       os.chdir(raw_number)
-      cv2.imwrite(image, result_raw_number)
+      cv2.imwrite(nimage, result_raw_number)
 
       # foci information log status
       logger.info('{}, {}, foci detected: success'.format(plate,image))
