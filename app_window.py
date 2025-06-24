@@ -19,6 +19,9 @@ min_pixel = parser.getint('Parameters','min_foci_size')
 box_color = parser.get('Parameters','box_color')
 box_color_rgb = tuple(int(box_color.lstrip('#')[i:i+2], 16) for i in (0, 2, 4))
 
+number_color = parser.get('Parameters','number_color')
+number_color_rgb = tuple(int(number_color.lstrip('#')[i:i+2], 16) for i in (0, 2, 4))
+
 # =================== timestamp ===================
 dt_object = datetime.now()
 
@@ -116,7 +119,7 @@ for plate in os.listdir(input_path):
       #image result
       result_binary_mask = foci_filter(binary_img,imagesize,box)
       result_raw_box = foci_draw_detected(img_crop,imagesize,box,box_color_rgb)
-      result_raw_number = write_numberOfFoci(img_crop,imagesize,box)
+      result_raw_number = write_numberOfFoci(img_crop,imagesize,box,number_color_rgb)
 
       # Allow the script to process non-Jpeg files that can still be read by cv2 (e.g. *.CTL from ImageJ).     
       if image.lower().endswith(('.png', '.jpg', '.jpeg')):
