@@ -138,17 +138,17 @@ def num_pixels(boxes):
 # =============== draw in formation on image session ===============
 
 # Draw rectangle on original image
-def foci_draw_detected(img,size,boxes):
+def foci_draw_detected(img,size,boxes,box_color = (0,255,255)):
   high, width = size, size
   imgresize = cv2.resize(img,(width, high))
   gray_img = cv2.cvtColor(imgresize,cv2.COLOR_GRAY2BGR)
   
   for x,y,w,h,i,pixels,centroid_x,centroid_y,normal_foci_area in boxes:
-      cv2.rectangle(gray_img, (x,y), (x+w,y+h), (0,255,255),1)
+      cv2.rectangle(gray_img, (x,y), (x+w,y+h), box_color,1)
   return gray_img
 
 # write text on image
-def write_numberOfFoci(img,size,boxes):
+def write_numberOfFoci(img,size,boxes,number_color = (0,255,255)):
   high, width = size, size
   imgresize = cv2.resize(img,(width, high))
   gray_img = cv2.cvtColor(imgresize,cv2.COLOR_GRAY2BGR)
@@ -157,7 +157,7 @@ def write_numberOfFoci(img,size,boxes):
   for x,y,w,h,i,pixels,centroid_x,centroid_y,normal_foci_area in boxes:
       fontScale = 0.0006*size
       font = cv2.FONT_HERSHEY_SIMPLEX
-      n_foci = cv2.putText(gray_img, str(i), (centroid_x,centroid_y), font, fontScale, (0,255,255), 1, cv2.LINE_AA)
+      n_foci = cv2.putText(gray_img, str(i), (centroid_x,centroid_y), font, fontScale, number_color, 1, cv2.LINE_AA)
   return gray_img
 
 # foci filter for create the binary image (mask pixel)
